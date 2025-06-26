@@ -12,7 +12,7 @@ jobs:
             - name: checkout code
               uses: actions/checkout@v4
             - name: setup terraform
-              uses: actions/checkout@v4
+              uses: hashicorp/setup-terraform@v3
             - name: aws credentails
               uses: aws-actions/configure-aws-credentials@v4
               with:
