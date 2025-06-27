@@ -27,5 +27,11 @@ jobs:
               run: terraform validate
             - name: terraform plan
               run: terraform plan
+            - name: Manual approval
+              uses: trstringer/manual-approval@v1
+              with:
+                secret: ${{ github.TOKEN }}
+                approvers: Mohan-444
+                minimum-approvals: 1
             - name: terraform apply
               run: terraform apply
