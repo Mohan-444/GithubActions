@@ -1,4 +1,6 @@
 name: create S3 bucket
+permissions:
+  issues: write 
 on:
     push:
         branches: 
