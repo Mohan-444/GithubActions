@@ -31,7 +31,7 @@ jobs:
               uses: trstringer/manual-approval@v1
               with:
                 secret: ${{ github.TOKEN }}
-                approvers: "@Mohan-444"
+                approvers: "Mohan-444"
                 exclude-workflow-initiator-as-approver: false
                 minimum-approvals: 1
             - name: terraform apply
