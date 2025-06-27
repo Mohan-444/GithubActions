@@ -37,4 +37,4 @@ jobs:
                 exclude-workflow-initiator-as-approver: false
                 minimum-approvals: 1
             - name: terraform apply
-              run: terraform apply
+              run: terraform apply --auto-approve
